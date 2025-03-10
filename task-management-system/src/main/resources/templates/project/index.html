@@ -1,0 +1,29 @@
+<html lang="en"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="_layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <h1>Manage Projects</h1>
+
+    <div class="row">
+        <div class="col">
+            <a href="/project/create" class="btn btn-primary">Create Project</a>
+        </div>
+        <div class="col">
+            <a href="/project/status" class="btn btn-warning">Project Status</a>
+        </div>
+        <div class="col">
+            <a href="/project" class="btn btn-info">View All Projects</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

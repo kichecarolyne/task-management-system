@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ApplicationController {
 
-    @GetMapping("/index2")
+    @GetMapping("/index")
     public String home(){
-        return "index2";
+        return "index";
     }
 
     @GetMapping("/admin")
@@ -24,6 +24,11 @@ public class ApplicationController {
     @GetMapping("/tasks")
     public String tasks(){
         return "/tasks/index";
+    }
+
+    @GetMapping("/my_tasks")
+    public String my_tasks(){
+        return "/my_tasks/index";
     }
 
     @GetMapping("/parameters")
