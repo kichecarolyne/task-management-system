@@ -21,7 +21,7 @@ public class JwtUtils {
 
     public JwtUtils() {
         // Replace the secret key string with your actual secret key
-        String secretString = "c2a2462a198bf71fdadaa8bb183979dccda75415bc930d2904dafa0a649eb78a1581eb2bbb20f7eb50039b5f036a046807dc9309cb4f59fa6913e9a6f93df2f5";
+        String secretString = "";
         byte[] keyBytes = Base64.getDecoder().decode(secretString.getBytes(StandardCharsets.UTF_8));
         this.Key = new SecretKeySpec(keyBytes, "HmacSHA256");
     }

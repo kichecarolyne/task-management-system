@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class TaskService {
+public class TaskManagement {
 
     @Autowired
     private TaskRepository taskRepo;
@@ -116,3 +116,4 @@ public class TaskService {
         return response;
     }
 }
+
